@@ -19,7 +19,7 @@ import ssl
 
 import urllib3
 
-from openapi_client.exceptions import ApiException, ApiValueError
+from booklooker-api-client.exceptions import ApiException, ApiValueError
 
 RESTResponseType = urllib3.HTTPResponse
 

@@ -1,4 +1,4 @@
-# openapi_client.AuthenticationApi
+# booklooker-api-client.AuthenticationApi
 
 All URIs are relative to *https://api.booklooker.de/2.0*
 
@@ -19,22 +19,22 @@ Authentifizierung via API Key. Ihren persönlichen API Key erhalten Sie <a href=
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.authenticate_post200_response import AuthenticatePost200Response
-from openapi_client.rest import ApiException
+import booklooker-api-client
+from booklooker-api-client.models.authenticate_post200_response import AuthenticatePost200Response
+from booklooker-api-client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.booklooker.de/2.0
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = booklooker-api-client.Configuration(
     host = "https://api.booklooker.de/2.0"
 )
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with booklooker-api-client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.AuthenticationApi(api_client)
+    api_instance = booklooker-api-client.AuthenticationApi(api_client)
     api_key = 'api_key_example' # str | Ihr persönlicher API Key
 
     try:

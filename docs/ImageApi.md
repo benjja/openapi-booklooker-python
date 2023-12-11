@@ -1,4 +1,4 @@
-# openapi_client.ImageApi
+# booklooker-api-client.ImageApi
 
 All URIs are relative to *https://api.booklooker.de/2.0*
 
@@ -20,14 +20,14 @@ Einzelne oder alle Bilder eines Artikels löschen.
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.authenticate_post200_response import AuthenticatePost200Response
-from openapi_client.rest import ApiException
+import booklooker-api-client
+from booklooker-api-client.models.authenticate_post200_response import AuthenticatePost200Response
+from booklooker-api-client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.booklooker.de/2.0
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = booklooker-api-client.Configuration(
     host = "https://api.booklooker.de/2.0"
 )
 
@@ -43,9 +43,9 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with booklooker-api-client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ImageApi(api_client)
+    api_instance = booklooker-api-client.ImageApi(api_client)
     order_no = None # object | Ihre Bestell-Nummer
     position = n/a # int | <p>   Position des Bildes, falls nicht vorhanden werden alle (!) Bilder des Artikels gelöscht. </p> <p>   <strong>Achtung:</strong> Beim Löschen mehrerer (aber nicht aller) Bilder eines Artikels muss   berücksichtigt werden, dass sich beim Aufruf dieser Schnittstelle die Position der nachfolgenden Bilder   ändert: Wenn ein Artikel z.B. 5 Bilder hat und das Bild an Position <q>2</q> gelöscht wird,   ändert sich die Position der Bilder 3, 4, 5 in 2, 3, 4. </p>  (optional) (default to n/a)
 

@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.authenticate_post200_response_return_value import AuthenticatePost200ResponseReturnValue
+from booklooker-api-client.models.authenticate_post200_response_return_value import AuthenticatePost200ResponseReturnValue
 
 # TODO update the JSON string below
 json = "{}"

@@ -20,7 +20,7 @@ from setuptools import setup, find_packages  # noqa: H301
 #
 # prerequisite: setuptools
 # http://pypi.python.org/pypi/setuptools
-NAME = "openapi-client"
+NAME = "booklooker-api-client"
 VERSION = "1.0.0"
 PYTHON_REQUIRES = ">=3.7"
 REQUIRES = [
@@ -45,5 +45,5 @@ setup(
     long_description="""\
     &lt;p&gt;   Die &lt;strong&gt;Booklooker REST API&lt;/strong&gt; ermöglicht die sichere und einfache Kommunikation mit verschiedenen   Booklooker-Schnittstellen. Es besteht die Möglichkeit, Artikel und Aufträge abzufragen, zu ändern, zu stornieren   etc. Auch der automatische Import neuer oder geänderter Artikel ist ohne Weiteres möglich. &lt;/p&gt; &lt;p&gt;   Diese API basiert auf REST. Zur Benutzung führen Sie bitte die folgenden Schritte durch: &lt;/p&gt; &lt;ol&gt;   &lt;li&gt;     Sie benötigen Ihren persönlichen &lt;strong&gt;API Key&lt;/strong&gt;, diesen erhalten Sie im Bereich     &lt;a href&#x3D;\&quot;https://www.booklooker.de/app/priv/api_key.php\&quot;&gt;Persönliche Daten&lt;/a&gt;   &lt;/li&gt;   &lt;li&gt;     Benutzen Sie anschließend die Schnittstelle     &lt;a href&#x3D;\&quot;https://www.booklooker.de/pages/api_authenticate.php\&quot;&gt;authenticate&lt;/a&gt;     via HTTP&amp;nbsp;POST und Sie erhalten einen &lt;strong&gt;Token&lt;/strong&gt;,     welcher für alle folgenden Aufrufe benötigt wird.     Sofern Sie 10&amp;nbsp;Minuten keine Schnittstelle aufrufen,     verfällt der Token und Sie müssen sich erneut authentifizieren.   &lt;/li&gt;   &lt;li&gt;     Verwenden Sie eine der unten aufgelisteten Schnittstellen.     Die Beschreibung jeder Schnittstelle enthält die benötigten Parameter und die möglichen Rückgabewerte.   &lt;/li&gt; &lt;/ol&gt; &lt;p&gt;   Zur Kommunikation können verschiedene Programmiersprachen zum Einsatz kommen. Wir stellen Ihnen hier ein   &lt;a href&#x3D;\&quot;https://www.booklooker.de/pages/rest_api.php?do&#x3D;download&amp;filename&#x3D;booklooker_rest_api.php&amp;path&#x3D;booklooker_rest_api.php\&quot;&gt;Beispiel in PHP&lt;/a&gt;   zur Verfügung. &lt;/p&gt; &lt;p&gt;   Weiterhin bieten wir hier eine &lt;a href&#x3D;\&quot;https://www.booklooker.de/download/openapi.yaml\&quot;&gt;OpenAPI Spezifikation&lt;/a&gt; an.  &lt;/p&gt; 
     """,  # noqa: E501
-    package_data={"openapi_client": ["py.typed"]},
+    package_data={"booklooker-api-client": ["py.typed"]},
 )

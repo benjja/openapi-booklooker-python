@@ -21,7 +21,7 @@ import json
 from typing import Any, ClassVar, Dict, List, Optional
 from pydantic import BaseModel, StrictStr
 from pydantic import Field
-from openapi_client.models.authenticate_post200_response_return_value import AuthenticatePost200ResponseReturnValue
+from booklooker-api-client.models.authenticate_post200_response_return_value import AuthenticatePost200ResponseReturnValue
 try:
     from typing import Self
 except ImportError:

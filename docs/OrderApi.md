@@ -1,4 +1,4 @@
-# openapi_client.OrderApi
+# booklooker-api-client.OrderApi
 
 All URIs are relative to *https://api.booklooker.de/2.0*
 
@@ -24,14 +24,14 @@ Stornieren einer kompletten Bestellung
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.authenticate_post200_response import AuthenticatePost200Response
-from openapi_client.rest import ApiException
+import booklooker-api-client
+from booklooker-api-client.models.authenticate_post200_response import AuthenticatePost200Response
+from booklooker-api-client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.booklooker.de/2.0
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = booklooker-api-client.Configuration(
     host = "https://api.booklooker.de/2.0"
 )
 
@@ -47,9 +47,9 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with booklooker-api-client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.OrderApi(api_client)
+    api_instance = booklooker-api-client.OrderApi(api_client)
     order_id = None # object | Interne booklooker orderId der Bestellung, wird von der Schnittstelle <q>order</q> zurückgeliefert. 
 
     try:
@@ -102,14 +102,14 @@ Download aller Bestellungen eines bestimmten Tages bzw. Zeitintervalls.
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.authenticate_post200_response import AuthenticatePost200Response
-from openapi_client.rest import ApiException
+import booklooker-api-client
+from booklooker-api-client.models.authenticate_post200_response import AuthenticatePost200Response
+from booklooker-api-client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.booklooker.de/2.0
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = booklooker-api-client.Configuration(
     host = "https://api.booklooker.de/2.0"
 )
 
@@ -125,9 +125,9 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with booklooker-api-client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.OrderApi(api_client)
+    api_instance = booklooker-api-client.OrderApi(api_client)
     order_id = 56 # int | Interne booklooker orderId der Bestellung, wird von der Schnittstelle <q>order</q> zurückgeliefert. 
     var_date = 'var_date_example' # str | Datum, zu dem Bestellungen angefordert werden, im Format YYYY-MM-DD. Wenn übergeben, hat dieser Parameter Vorrang vor dateFrom und dateTo  (optional)
     date_from = 'date_from_example' # str | Start-Datum, zu dem Bestellungen angefordert werden, im Format YYYY-MM-DD (optional)
@@ -186,14 +186,14 @@ Stornieren der Bestellung eines Einzelartikels
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.authenticate_post200_response import AuthenticatePost200Response
-from openapi_client.rest import ApiException
+import booklooker-api-client
+from booklooker-api-client.models.authenticate_post200_response import AuthenticatePost200Response
+from booklooker-api-client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.booklooker.de/2.0
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = booklooker-api-client.Configuration(
     host = "https://api.booklooker.de/2.0"
 )
 
@@ -209,9 +209,9 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with booklooker-api-client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.OrderApi(api_client)
+    api_instance = booklooker-api-client.OrderApi(api_client)
     order_id = None # object | Interne booklooker orderId der Bestellung, wird von der Schnittstelle <q>order</q> zurückgeliefert. 
     media_type = 56 # int | Medientyp, mögliche Werte, mögliche Werte: <ul class=\"defaultList\">   <li>0 &middot; Bücher</li>   <li>1 &middot; Filme</li>   <li>2 &middot; Musik</li>   <li>3 &middot; Hörbücher</li>   <li>4 &middot; Spiele</li> </ul> 
 
@@ -266,14 +266,14 @@ Versand einer Nachricht an den Kunden.
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.authenticate_post200_response import AuthenticatePost200Response
-from openapi_client.rest import ApiException
+import booklooker-api-client
+from booklooker-api-client.models.authenticate_post200_response import AuthenticatePost200Response
+from booklooker-api-client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.booklooker.de/2.0
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = booklooker-api-client.Configuration(
     host = "https://api.booklooker.de/2.0"
 )
 
@@ -289,9 +289,9 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with booklooker-api-client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.OrderApi(api_client)
+    api_instance = booklooker-api-client.OrderApi(api_client)
     order_id = None # object | Interne booklooker orderId der Bestellung, wird von der Schnittstelle <q>order</q> zurückgeliefert. 
     message_type = 'message_type_example' # str | Typ der Nachricht, mögliche Werte: <ul class=\"defaultList\">   <li>PAYMENT_INFORMATION &middot; Zahlungsinformationen senden</li>   <li>PAYMENT_REMINDER &middot; Zahlungserinnerung senden</li>   <li>SHIPPING_NOTICE &middot; Versandmitteilung senden</li> </ul> 
     additional_text = 'additional_text_example' # str | Zusätzlicher Text, der in der Nachricht aufgenommen wird (optional)
@@ -348,14 +348,14 @@ Setzen des Status einer Bestellung.
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.authenticate_post200_response import AuthenticatePost200Response
-from openapi_client.rest import ApiException
+import booklooker-api-client
+from booklooker-api-client.models.authenticate_post200_response import AuthenticatePost200Response
+from booklooker-api-client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.booklooker.de/2.0
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = booklooker-api-client.Configuration(
     host = "https://api.booklooker.de/2.0"
 )
 
@@ -371,9 +371,9 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with booklooker-api-client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.OrderApi(api_client)
+    api_instance = booklooker-api-client.OrderApi(api_client)
     order_id = None # object | Interne booklooker orderId der Bestellung, wird von der Schnittstelle <q>order</q> zurückgeliefert. 
     status = 'status_example' # str | <p>Neuer Status der Bestellung, mögliche Werte:</p>  <h4>Bei Verkäufen sind die folgenden Status möglich:</h4>  <table class=\"table-padding-5 grid\">   <tr><th>Rückgabewert</th><th>Bedeutung</th></tr>   <tr><td>WAITING_FOR_PAYMENT</td><td>Zahlung offen</td></tr>   <tr><td>READY_FOR_SHIPMENT</td><td>fertig zum Versand</td></tr>   <tr><td>SHIPPED_WAITING_FOR_PAYMENT</td><td>versendet, warte auf Zahlung</td></tr>   <tr><td>SHIPPED_AND_PAID</td><td>versendet &amp; bezahlt</td></tr>   <tr><td>BUYER_NO_REACTION</td><td>Kunde reagiert nicht</td></tr>   <tr><td>CANCELED</td><td>storniert</td></tr> </table>              <p>   <strong>Achtung:</strong> Das Setzen des Status <strong>CANCELED</strong>   ist nicht gleichbedeutend mit dem Aufruf der Funktion   <q>order_item_cancel</q>. Der Status <strong>CANCELED</strong> dient lediglich der   Eigenorganisation des Verkäufers. Um eine Bestellung so zu   stornieren, dass keine Provision anfällt, *muss*   <q>order_item_cancel</q> aufgerufen werden. </p>  <h4>Bei Käufen sind die folgenden Status möglich:</h4>  <table class=\"table-padding-5 grid\">   <tr><th>Rückgabewert</th><th>Bedeutung</th></tr>   <tr><td>TO_BE_PAID</td><td>Zahlung offen</td></tr>   <tr><td>WAITING_FOR_SHIPMENT</td><td>warte auf Lieferung</td></tr>   <tr><td>PAID_WAITING_FOR_SHIPMENT</td><td>bezahlt, warte auf Lieferung</td></tr>   <tr><td>RECEIVED_AND_PAID</td><td>erhalten &amp; bezahlt </td></tr>   <tr><td>VENDOR_NO_REACTION</td><td>Verkäufer reagiert nicht</td></tr>   <tr><td>CANCELED</td><td>storniert</td></tr> </table> 
 

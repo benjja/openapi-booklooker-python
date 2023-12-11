@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 ## Example
 
 ```python
-from openapi_client.models.authenticate_post200_response import AuthenticatePost200Response
+from booklooker-api-client.models.authenticate_post200_response import AuthenticatePost200Response
 
 # TODO update the JSON string below
 json = "{}"

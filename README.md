@@ -67,7 +67,7 @@ pip install git+https://github.com/GIT_USER_ID/GIT_REPO_ID.git
 
 Then import the package:
 ```python
-import openapi_client
+import booklooker-api-client
 ```
 
 ### Setuptools
@@ -81,7 +81,7 @@ python setup.py install --user
 
 Then import the package:
 ```python
-import openapi_client
+import booklooker-api-client
 ```
 
 ### Tests
@@ -95,13 +95,13 @@ Please follow the [installation procedure](#installation--usage) and then run th
 ```python
 
 import time
-import openapi_client
-from openapi_client.rest import ApiException
+import booklooker-api-client
+from booklooker-api-client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.booklooker.de/2.0
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = booklooker-api-client.Configuration(
     host = "https://api.booklooker.de/2.0"
 )
 
@@ -118,9 +118,9 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with booklooker-api-client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.ArticleApi(api_client)
+    api_instance = booklooker-api-client.ArticleApi(api_client)
     order_no = None # object | Ihre Bestell-Nummer
 
     try:

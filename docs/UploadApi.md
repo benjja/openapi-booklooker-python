@@ -1,4 +1,4 @@
-# openapi_client.UploadApi
+# booklooker-api-client.UploadApi
 
 All URIs are relative to *https://api.booklooker.de/2.0*
 
@@ -22,14 +22,14 @@ Upload von Angebots- oder Bild-Dateien.
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.authenticate_post200_response import AuthenticatePost200Response
-from openapi_client.rest import ApiException
+import booklooker-api-client
+from booklooker-api-client.models.authenticate_post200_response import AuthenticatePost200Response
+from booklooker-api-client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.booklooker.de/2.0
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = booklooker-api-client.Configuration(
     host = "https://api.booklooker.de/2.0"
 )
 
@@ -45,9 +45,9 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with booklooker-api-client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.UploadApi(api_client)
+    api_instance = booklooker-api-client.UploadApi(api_client)
     file_type = 'article' # str | Dateityp, mögliche Werte: <ul class=\"defaultList\">   <li>pic &middot; Bild-Datei</li>   <li>article &middot; Angebots-Datei</li> </ul>  (optional) (default to 'article')
     data_type = 1 # int | Art des Uploads, mögliche Werte: <ul class=\"defaultList\">   <li>0 &middot; Hinzufügen/ändern/Löschen</li>   <li>1 &middot; Ersetzen</li>   <li>2 &middot; Löschen</li> </ul>  (optional) (default to 1)
     media_type = 0 # int | Medientyp, mögliche Werte: <ul class=\"defaultList\">   <li>0 &middot; Bücher</li>   <li>1 &middot; Filme</li>   <li>2 &middot; Musik</li>   <li>3 &middot; Hörbücher</li>   <li>4 &middot; Spiele</li> </ul>  (optional) (default to 0)
@@ -110,14 +110,14 @@ Abfragen des Status einer hochgeladenen Angebotsdatei
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.authenticate_post200_response import AuthenticatePost200Response
-from openapi_client.rest import ApiException
+import booklooker-api-client
+from booklooker-api-client.models.authenticate_post200_response import AuthenticatePost200Response
+from booklooker-api-client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.booklooker.de/2.0
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = booklooker-api-client.Configuration(
     host = "https://api.booklooker.de/2.0"
 )
 
@@ -133,9 +133,9 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with booklooker-api-client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.UploadApi(api_client)
+    api_instance = booklooker-api-client.UploadApi(api_client)
     filename = 'filename_example' # str | Name der hochgeladenen Datei. Existieren mehrere hochgeladene Dateien mit diesem Namen, bezieht sich der zurückgegebene Wert auf die zuletzt hochgeladene Datei. 
 
     try:
@@ -188,14 +188,14 @@ Abfragen der Anzahl unverarbeiteter hochgeladener Angebotsdateien.
 ```python
 import time
 import os
-import openapi_client
-from openapi_client.models.authenticate_post200_response import AuthenticatePost200Response
-from openapi_client.rest import ApiException
+import booklooker-api-client
+from booklooker-api-client.models.authenticate_post200_response import AuthenticatePost200Response
+from booklooker-api-client.rest import ApiException
 from pprint import pprint
 
 # Defining the host is optional and defaults to https://api.booklooker.de/2.0
 # See configuration.py for a list of all supported configuration parameters.
-configuration = openapi_client.Configuration(
+configuration = booklooker-api-client.Configuration(
     host = "https://api.booklooker.de/2.0"
 )
 
@@ -211,9 +211,9 @@ configuration.api_key['tokenAuth'] = os.environ["API_KEY"]
 # configuration.api_key_prefix['tokenAuth'] = 'Bearer'
 
 # Enter a context with an instance of the API client
-with openapi_client.ApiClient(configuration) as api_client:
+with booklooker-api-client.ApiClient(configuration) as api_client:
     # Create an instance of the API class
-    api_instance = openapi_client.UploadApi(api_client)
+    api_instance = booklooker-api-client.UploadApi(api_client)
 
     try:
         # Abfragen der Anzahl unverarbeiteter hochgeladener Angebotsdateien

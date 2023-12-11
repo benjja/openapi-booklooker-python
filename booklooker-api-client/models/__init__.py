@@ -1,7 +1,6 @@
 # coding: utf-8
 
 # flake8: noqa
-
 """
     booklooker REST API
 
@@ -14,26 +13,6 @@
 """  # noqa: E501
 
 
-__version__ = "1.0.0"
-
-# import apis into sdk package
-from openapi_client.api.article_api import ArticleApi
-from openapi_client.api.authentication_api import AuthenticationApi
-from openapi_client.api.image_api import ImageApi
-from openapi_client.api.order_api import OrderApi
-from openapi_client.api.upload_api import UploadApi
-
-# import ApiClient
-from openapi_client.api_response import ApiResponse
-from openapi_client.api_client import ApiClient
-from openapi_client.configuration import Configuration
-from openapi_client.exceptions import OpenApiException
-from openapi_client.exceptions import ApiTypeError
-from openapi_client.exceptions import ApiValueError
-from openapi_client.exceptions import ApiKeyError
-from openapi_client.exceptions import ApiAttributeError
-from openapi_client.exceptions import ApiException
-
-# import models into sdk package
-from openapi_client.models.authenticate_post200_response import AuthenticatePost200Response
-from openapi_client.models.authenticate_post200_response_return_value import AuthenticatePost200ResponseReturnValue
+# import models into model package
+from booklooker-api-client.models.authenticate_post200_response import AuthenticatePost200Response
+from booklooker-api-client.models.authenticate_post200_response_return_value import AuthenticatePost200ResponseReturnValue

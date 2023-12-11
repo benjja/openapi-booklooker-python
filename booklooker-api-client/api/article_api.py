@@ -29,11 +29,11 @@ from pydantic import StrictStr, field_validator
 
 from typing import Any, Optional
 
-from openapi_client.models.authenticate_post200_response import AuthenticatePost200Response
+from booklooker-api-client.models.authenticate_post200_response import AuthenticatePost200Response
 
-from openapi_client.api_client import ApiClient
-from openapi_client.api_response import ApiResponse
-from openapi_client.rest import RESTResponseType
+from booklooker-api-client.api_client import ApiClient
+from booklooker-api-client.api_response import ApiResponse
+from booklooker-api-client.rest import RESTResponseType
 
 
 class ArticleApi:
