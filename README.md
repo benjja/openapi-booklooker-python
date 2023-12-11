@@ -1,4 +1,4 @@
-# openapi-client
+# openapi-booklooker-client
 
 ## Attention! This is a generated client!
 
