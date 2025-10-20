@@ -16,16 +16,16 @@ stages:
 
 pytest-3.7:
   extends: .pytest
-  image: python:3.12-alpine
+  image: python:3.14-alpine
 pytest-3.8:
   extends: .pytest
-  image: python:3.12-alpine
+  image: python:3.14-alpine
 pytest-3.9:
   extends: .pytest
-  image: python:3.12-alpine
+  image: python:3.14-alpine
 pytest-3.10:
   extends: .pytest
-  image: python:3.12-alpine
+  image: python:3.14-alpine
 pytest-3.11:
   extends: .pytest
-  image: python:3.12-alpine
+  image: python:3.14-alpine
